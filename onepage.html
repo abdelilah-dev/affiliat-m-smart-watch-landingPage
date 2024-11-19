@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"
+            content="The HUAWEI Watch FIT 3 combines style and functionality with its stunning 1.82'' AMOLED display and lightweight, durable design. Perfect for fitness enthusiasts and everyday users, it features comprehensive health tracking, including heart rate, sleep, and stress monitoring. With a long-lasting battery, customizable watch faces, and compatibility with both Android and iOS, it’s your ultimate fitness and lifestyle companion. Stay connected, monitor your health, and achieve your goals with this all-in-one smartwatch, designed for comfort and versatility. Perfect for workouts, casual wear, or professional settings, the HUAWEI Watch FIT 3 is the smartwatch you’ve been waiting for.">
+        <meta name="keywords"
+            content="Huawei Watch FIT 3, Fitness Smartwatch, AMOLED Display Watch, Huawei Smartwatch USA, Best smartwatch with AMOLED display in the USA, Huawei Watch FIT 3 for fitness tracking, Affordable fitness smartwatch with heart rate monitoring, Smartwatch compatible with Android and iOS devices, Durable smartwatch for daily fitness, Huawei Watch FIT 3 with long battery life, All-day health tracking smartwatch, Lightweight smartwatch for workouts, Smartwatch with 1.82-inch AMOLED display, Fitness tracker with sleep and stress monitoring, Comprehensive health management smartwatch, Stylish smartwatch with customizable watch faces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HUAWEI Watch FIT 3 – The Ultimate Fitness Smartwatch with 1.82'' AMOLED Display</title>
+        <!-- Google Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Start Css Style  -->
+        <style>
+            /* Start Variable  */
+            :root {
+                --light-blue-color: #EDF1F3;
+                --light-color: #f8f9fa;
+                --primary-color: #72AEC8;
+
+
+                --padding-section: 100px;
+                --main-transition-duration: 0.3s;
+
+            }
+
+            /* Start Global Rules */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media (max-width:567px) {
+                .container {
+                    width: 100%
+                }
+            }
+
+            @media (min-width:567px) {
+                .container {
+                    width: 540px
+                }
+            }
+
+            @media (min-width:768px) {
+                .container {
+                    width: 720px
+                }
+            }
+
+            @media (min-width:992px) {
+                .container {
+                    width: 960px
+                }
+            }
+
+            @media (min-width:1200px) {
+                .container {
+                    width: 1140px
+                }
+            }
+
+            @media (min-width:1400px) {
+                .container {
+                    width: 1320px
+                }
+            }
+
+            /* End Global Rules */
+
+
+            /* Start Header Section  */
+            .header-section {
+                background-color: var(--light-color);
+            }
+
+            .header-section .container .header-content {
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+            }
+
+            .header-content .logo h1 {
+                text-transform: uppercase;
+                color: black;
+                position: relative;
+                width: fit-content;
+                display: block;
+                font-size: 2.5rem;
+                font-family: "Sour Gummy", sans-serif;
+            }
+
+
+            .header-content .logo h1 span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translate(-3px, 35px);
+                font-size: 24px;
+                color: #72AEC8;
+            }
+
+            .header-content .links {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+
+            .header-content .links:hover .all-links {
+                transform: translateY(0rem);
+                opacity: 1;
+                z-index: 100;
+            }
+
+            .header-content .links .dropdown-menu {
+                padding: 5px 10px;
+            }
+
+            @media (min-width: 992px) {
+                .header-content .links .dropdown-menu {
+                    display: none;
+                }
+            }
+
+            .header-content .links .dropdown-menu svg {
+                width: 25px;
+            }
+
+            .header-content .links .all-links {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 991px) {
+                .header-content .links .all-links {
+                    position: absolute;
+                    right: 0;
+                    top: 100%;
+                    width: 100%;
+                    gap: 0;
+                    background-color: var(--light-color);
+                    border-radius: 15px;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    transform: translateY(4rem);
+                    opacity: 0;
+                    z-index: -1;
+                    transition: var(--main-transition-duration);
+                }
+
+                .header-content .links .all-links::before {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    height: 40px;
+                    background: transparent;
+                    top: -40px;
+                    left: 0;
+                }
+
+                .header-content .links .all-links li {
+                    width: 100%;
+                }
+            }
+
+            .header-content .links .all-links a {
+                font-weight: 600;
+                font-size: 16px;
+                display: block;
+                color: black;
+                text-transform: uppercase;
+                transition: var(--main-transition-duration);
+                letter-spacing: 1px;
+            }
+
+            @media (max-width: 992px) {
+                .header-content .links .all-links a {
+                    width: 100%;
+                    padding: 1rem 1rem;
+                }
+
+                .header-content .links .all-links a:hover {
+                    background-color: var(--light-color);
+                }
+            }
+
+            .header-content .links .all-links a:hover {
+                color: var(--primary-color);
+            }
+
+            @media (max-width: 991px) {
+                .header-content .links .all-links .btn {
+                    padding: 1rem;
+                }
+            }
+
+            .header-content .links .all-links .btn a {
+                border: 2px solid var(--primary-color);
+                padding: 10px 15px;
+                border-radius: 25px;
+                color: white;
+                background: var(--primary-color);
+                display: block;
+                font-size: 18px;
+            }
+
+            .header-content .links .all-links .btn a:hover {
+                background-color: transparent;
+                color: var(--primary-color);
+            }
+
+            /* End Header Section  */
+
+            /* Start Landing SEction  */
+            .landing-section {
+                width: 100%;
+                height: calc(100vh - 86.4px);
+                overflow: hidden;
+                background-color: var(--light-blue-color);
+            }
+
+            .landing-section .container {
+                height: 100%;
+            }
+
+            .landing-section .container .landing-content {
+                display: flex;
+                align-items: center;
+                position: relative;
+                height: 100%;
+
+            }
+
+            .landing-content>div {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .landing-content .info {}
+
+            @media (max-width: 768px) {
+                .landing-content .info {
+                    position: relative;
+                    z-index: 4;
+                    text-align: center;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .landing-content .info h1 {
+                font-size: 3.5rem;
+                font-weight: 900;
+                margin-bottom: 2rem;
+            }
+
+            @media (max-width: 991px) {
+                .landing-content .info h1 {
+                    font-size: calc(2rem + 1vw);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .landing-content .info h1 {
+                    font-size: calc(2.5rem + 1vw);
+                }
+            }
+
+            .landing-content .info p {
+                color: #444;
+                line-height: 1.8;
+                margin-bottom: 1rem;
+                width: 80%;
+            }
+
+            @media (max-width: 768px) {
+                .landing-content .info p {
+                    width: 100%;
+                }
+            }
+
+            .landing-content .info .buttons {}
+
+            .landing-content .info .buttons span {}
+
+            .landing-content .info .buttons a {}
+
+            @media (max-width: 768px) {
+                .landing-content .img {
+                    position: absolute;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                .landing-content .img::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #edf1f37d;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .landing-content .img img {
+                margin-left: auto;
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                .landing-content .img img {
+                    margin: auto;
+                }
+            }
+
+            /* End Landing SEction  */
+        </style>
+        <!-- End Css Style  -->
+    </head>
+
+    <body>
+        <div class="header-section">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>accessory <span>World</span></h1>
+                    </div>
+                    <div class="links">
+                        <div class="dropdown-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </div>
+                        <ul class="all-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <div class="btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="landing-section">
+            <div class="container">
+                <div class="landing-content">
+                    <div class="info">
+                        <h1>Redefine Your Lifestyle with the HUAWEI Watch FIT 3</h1>
+                        <p>"Experience a 1.82'' AMOLED Display, powerful health tracking, and a stylish design that fits
+                            your everyday life."
+                        </p>
+                        <div class="buttons">
+                            <span>Shop Now On</span>
+                            <a href="#">Amazon</a>
+                            <a href="#">AliXpress</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/one-bg-remove.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
