@@ -604,19 +604,55 @@ a {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .featur-content .row a {
     flex: 0 0 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
     cursor: pointer;
+    background: #fff9f4;
+    border-radius: 30px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .featur-content .row a {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .featur-content .row a.fitness {
+        transform: translateY(-55px);
+    }
+}
+
+@media (min-width: 992px) {
+    .featur-content .row a.fitness {
+        transform: translateY(-75px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .featur-content .row a.fitness {
+        transform: translateY(-90px);
+    }
 }
 
 .featur-content .row a p {
     cursor: pointer;
     color: black;
+}
 
+.featur-content .row a.screen p,
+.featur-content .row a.design p {
+    font-size: 2rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
 }
 
 .featur-content .row a img {
