@@ -84,7 +84,7 @@ a {
 }
 
 .main-heading span {
-    padding: 10px;
+    padding: 10px 20px;
     background: var(--light-blue-color);
     border-radius: 30px;
     font-weight: 500;
@@ -418,6 +418,26 @@ a {
 }
 
 /* End Landing SEction  */
+/* Start product-color-section */
+.product-color-section {
+    padding-top: var(--padding-section);
+}
+
+.product-color-section .pro-color-content {
+    display: flex;
+    align-items: center;
+}
+
+.pro-color-content .box {
+    flex: 0 0 calc(100% / 6);
+    max-width: calc(100% / 6);
+}
+
+.pro-color-content .box img {
+    width: 100%;
+}
+
+/* End product-color-section */
 /* Starat About Section  */
 .about-section {
     padding-top: var(--padding-section);
@@ -515,7 +535,7 @@ a {
     position: absolute;
     top: -10px;
     left: -40px;
-    
+
     transform: rotate(135deg);
 }
 
@@ -572,12 +592,38 @@ a {
     }
 }
 
-
-
-
-
-
 /* End About Section  */
+
+/* Start featur section  */
+.featur-section {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+
+.featur-section .featur-content .row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.featur-content .row a {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    cursor: pointer;
+}
+
+.featur-content .row a p {
+    cursor: pointer;
+    color: black;
+
+}
+
+.featur-content .row a img {
+    width: 100%;
+}
+
+/* End featur section  */
 
 /* Start animation */
 @keyframes up-down {
